@@ -4,6 +4,7 @@ class Map
 {
     public static function get()
     {
-        // return map file
+        $map = getConfig()->get('map');
+        getRoute()->redirect('/' . $map->dir . '/' . $map->file, 307);
     }
 }
