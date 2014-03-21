@@ -31,7 +31,7 @@ Return all places of interest.
 
 **Response**
 
-```JSON
+```
 {   
     pois : [
         {
@@ -65,7 +65,7 @@ Return all questions.
 
 **Response**
 
-```JSON
+```
 {   
     questions : [
         {
