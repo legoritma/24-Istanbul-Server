@@ -21,7 +21,8 @@
 ### API End Points
 ----------------------------------------
 All external end points start with `/api/`
-**Response sections are not final***
+
+####Response sections are not final!!!
 
 ### POI Lists
 
@@ -160,7 +161,7 @@ Return Istanbul map file
 
 **Response**
 
-`map/{map_file}.zip` file will be given.
+`{map_dir}/{map_file}` will be given. For example: `map/map-current.zip`
 
 
 ### Future Work
