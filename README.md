@@ -24,7 +24,7 @@ All external end points start with `/api/`
 
 ####Response sections are not final!!!
 
-### POI Lists
+### API Lists
 
 * `/api/poi/all.json`
 * `/api/poi/{unix_date}/updated.json`
