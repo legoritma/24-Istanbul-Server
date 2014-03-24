@@ -7,6 +7,7 @@
 
 * Clone repo to your localhost/server
 * Put your map file
+* IF you don't have previous DB, import 'config/database.dump.sql'
 * Rename 'config/config.example.ini' to 'config/config.ini' and do necessary changes
 * Have fun
 
