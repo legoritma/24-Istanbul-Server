@@ -23,6 +23,16 @@
 All external end points start with `/api/`
 **Response sections are not final***
 
+### POI Lists
+
+* `/api/poi/all.json`
+* `/api/poi/{unix_date}/updated.json`
+* `/api/question/all.json`
+* `/api/question/{unix_date}/updated.json`
+* `/api/category/all.json`
+* `/api/category/{unix_date}/updated.json`
+* `/api/map`
+
 -----
 **Request**
 `/api/poi/all.json`
@@ -33,14 +43,16 @@ Return all places of interest.
 
 ```
 {   
+    count : 1,
     pois : [
         {
             id: "4bc8088f15a7ef3b6b857ada",
             name : 'Ayasofya | Hagia Sophia',
-            lat: 41.00862118012785,
-            lng: 28.9799165725708,
+            lat: 41.008621,
+            lng: 28.979917,
+            tags : [24, 42], // historic and museum
             rating: 9.68,
-            tags : ['historic', 'museum'],
+            address : "Sultan Ahmet Mah. Yerebatan Cad. Sultanahmet, Fatih"
             update_date: '2014-03-21'
         }
     ]
@@ -67,6 +79,7 @@ Return all questions.
 
 ```
 {   
+    count : 1,
     questions : [
         {
             id: 1
@@ -74,10 +87,10 @@ Return all questions.
             options : [
                 {
                     'text' : 'Yes'
-                    'tag' : 'takeaway'
+                    'tag' : 7   // takeaway
                 }, {
                     'text' : 'No'
-                    'tag' : 'restaurant'
+                    'tag' : 6   // rastaurant
                 }
             ]
             update_date: '2014-03-21'
@@ -95,6 +108,49 @@ Return only questions updated after `{unix_date}`
 **Response**
 
 Same as with `/api/question/all.json`
+
+-----
+**Request**
+`/api/category/all.json`
+
+Return all categories.
+
+**Response**
+
+```
+{   
+    count : 1,
+    category : [
+        {
+            id: 1
+            name : 'Eating & Drinking',
+            tags : [
+                {
+                    'id' : 4
+                    'name' : 'turkish'
+                }, {
+                    'id' : 6
+                    'name' : 'restaurant'
+                }, {
+                    'id' : 7
+                    'name' : 'takeaway'
+                }
+            ]
+            update_date: '2014-03-21'
+        }
+    ]
+}
+```
+
+-----
+**Request**
+`/api/category/{unix_date}/updated.json`
+
+Return only categories updated after `{unix_date}`
+
+**Response**
+
+Same as with `/api/category/all.json`
 
 -----
 **Request**

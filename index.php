@@ -23,6 +23,9 @@ getRoute()->get('/api/poi/(\d+)/updated.json', array('PlacesOfInterest', 'update
 getRoute()->get('/api/question/all.json', array('Question', 'all'), EpiApi::external);
 getRoute()->get('/api/question/(\d+)/updated.json', array('Question', 'updated'), EpiApi::external);
 
+getRoute()->get('/api/category/all.json', array('Category', 'all'), EpiApi::external);
+getRoute()->get('/api/category/(\d+)/updated.json', array('Category', 'updated'), EpiApi::external);
+
 getRoute()->run();
 
 // Pages
