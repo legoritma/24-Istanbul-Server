@@ -26,9 +26,26 @@ getRoute()->get('/api/question/(\d+)/updated.json', array('Question', 'updated')
 getRoute()->get('/api/category/all.json', array('Category', 'all'), EpiApi::external);
 getRoute()->get('/api/category/(\d+)/updated.json', array('Category', 'updated'), EpiApi::external);
 
+getRoute()->get('.*', 'error404', EpiApi::external);
+
 getRoute()->run();
 
 // Pages
 function index() {
-    echo 'Wellcome to 24-Istanbul';
+    echo 'Welcome to 24-Istanbul';
+}
+
+function error404() {
+    return array(
+        'error' => 'API not found',
+        'availableApis' => array(
+            '/api/map',
+            '/api/poi/all.json',
+            '/api/poi/{unix_time}/updated.json',
+            '/api/question/all.json',
+            '/api/question/{unix_time}/updated.json',
+            '/api/category/all.json',
+            '/api/category/{unix_time}/updated.json',
+        )
+    );
 }
