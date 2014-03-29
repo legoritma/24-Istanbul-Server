@@ -1,19 +1,34 @@
 24-Istanbul-Server
 ==================
 
+#Warning
+
+This repo automaticly deployed production server. (http://sw2.obcdn.net/)
+
+That's why you MUST test your code on your localhost or development server.
+
+### Requirements
+----------------------------------------
+
+* An AMP Server (Apache2, MySQL, PHP)
+* mod_rewrite
+
 
 ### Installation
 ----------------------------------------
 
 * Clone repo to your localhost/server
 * Put your map file
-* IF you don't have previous DB, import 'config/database.dump.sql'
+* If you don't have previous DB, import 'config/database.dump.sql'
 * Rename 'config/config.example.ini' to 'config/config.ini' and do necessary changes
 * Have fun
 
 
 ### Development
 ----------------------------------------
+
+####Useful
+
 [Epiphany](https://github.com/jmathai/epiphany) framework used in this project, you should check it before jump in
 
 [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) must followed as a coding style guideline.
