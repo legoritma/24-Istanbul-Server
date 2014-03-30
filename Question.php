@@ -12,7 +12,7 @@ class Question
             $options = array();
             foreach($optionsResults as $option)
             {
-                  $options = array(
+                  $options[] = array(
                       'id' => $option['ID'],
                       'text' => $option['Name'],
                       'tag' => $option['TagID']
@@ -29,7 +29,7 @@ class Question
         
         $all = array(
            'count' => count($questions),
-           'question' => $question
+           'question' => $questions
         );
         
         return $all;

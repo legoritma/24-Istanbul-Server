@@ -103,9 +103,11 @@ Return all questions.
             question : 'Do you want to take the food with you?',
             options : [
                 {
+                    'id' : 1,
                     'text' : 'Yes'
                     'tag' : 7   // takeaway
                 }, {
+                    'id' : 2,
                     'text' : 'No'
                     'tag' : 6   // rastaurant
                 }
