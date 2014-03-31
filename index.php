@@ -1,8 +1,9 @@
 <?php
-include_once 'epiphany/Epi.php';
-include_once 'Map.php';
-include_once 'PlacesOfInterest.php';
-include_once 'Question.php';
+require_once 'epiphany/Epi.php';
+require_once 'Map.php';
+require_once 'PlacesOfInterest.php';
+require_once 'Question.php';
+require_once 'Category.php';
 
 EPI::setPath('base', 'epiphany');
 EPI::init('api', 'config', 'database', 'route');
