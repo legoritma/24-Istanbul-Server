@@ -143,18 +143,7 @@ Return all categories.
         {
             id: 1
             name : 'Eating & Drinking',
-            tags : [
-                {
-                    'id' : 4
-                    'name' : 'turkish'
-                }, {
-                    'id' : 6
-                    'name' : 'restaurant'
-                }, {
-                    'id' : 7
-                    'name' : 'takeaway'
-                }
-            ]
+            tags : [ 4, 6, 7 ],
             update_date: '2014-03-21'
         }
     ]
