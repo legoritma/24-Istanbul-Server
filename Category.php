@@ -16,12 +16,10 @@ class Category
             $categoriesResults = getDatabase()->all('SELECT * FROM categories WHERE LastUpdateDate > :since', array(':since' => $since));
         }
         $categories = array();
-        foreach($categoriesResults as $category)
-        {
+        foreach($categoriesResults as $category){
             $tagsResults = getDatabase()->all('SELECT * FROM tags WHERE CategoryID = :id', array(':id' => $category['ID']));
             $tags = array();
-            foreach($tagsResults as $tag)
-            {
+            foreach($tagsResults as $tag){
                   $tags[] = $tag['ID'];
             }
             $categories[] = array(
