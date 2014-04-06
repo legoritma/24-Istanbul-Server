@@ -68,7 +68,6 @@ Return all places of interest.
             lat: 41.008621,
             lng: 28.979917,
             tags : [24, 42], // historic and museum
-            rating: 9.68,
             address : "Sultan Ahmet Mah. Yerebatan Cad. Sultanahmet, Fatih"
             update_date: '2014-03-21'
         }

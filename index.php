@@ -32,11 +32,13 @@ getRoute()->get('.*', 'error404', EpiApi::external);
 getRoute()->run();
 
 // Pages
-function index() {
+function index()
+{
     echo 'Welcome to 24-Istanbul';
 }
 
-function error404() {
+function error404()
+{
     return array(
         'error' => 'API not found',
         'availableApis' => array(
