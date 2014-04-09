@@ -21,13 +21,13 @@ class PlacesOfInterest
             $tagsResults = getDatabase()->all('SELECT * FROM venue_meta WHERE venueID = :id', array(':id' => $poi['ID']));
             $tags = array();
             foreach ($tagsResults as $tag) {
-                $tags[] = $tag['tagID'];
+                $tags[] = intval($tag['tagID']);
             }
             $pois[] = array(
                 'id'=> $poi['ID'],
                 'name'=> $poi['Name'],
-                'lat'=> $poi['Latitude'],
-                'lng'=> $poi['Longitude'],
+                'lat'=> floatval($poi['Latitude']),
+                'lng'=> floatval($poi['Longitude']),
                 'tags'=> $tags,
                 'address'=> $poi['Address'],
                 'update_date'=> $poi['LastUpdateDate']

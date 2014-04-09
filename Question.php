@@ -18,13 +18,13 @@ class Question
             $options = array();
             foreach($optionsResults as $option){
                   $options[] = array(
-                      'id' => $option['ID'],
+                      'id' => intval($option['ID']),
                       'text' => $option['Name'],
-                      'tag' => $option['TagID']
+                      'tag' => intval($option['TagID'])
                   );
             }
             $questions[] = array(
-                 'id' => $question['ID'],
+                 'id' => intval($question['ID']),
                  'question' => $question['Question'],
                  'options' => $options,
                  'update_date' => $question['LastUpdateDate']

@@ -20,10 +20,10 @@ class Category
             $tagsResults = getDatabase()->all('SELECT * FROM tags WHERE CategoryID = :id', array(':id' => $category['ID']));
             $tags = array();
             foreach($tagsResults as $tag){
-                  $tags[] = $tag['ID'];
+                  $tags[] = intval($tag['ID']);
             }
             $categories[] = array(
-                 'id' => $category['ID'],
+                 'id' => intval($category['ID']),
                  'name' => $category['Name'],
                  'tags' => $tags,
                  'update_date' => $category['LastUpdateDate']
