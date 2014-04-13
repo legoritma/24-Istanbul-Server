@@ -95,10 +95,11 @@ Return all questions.
 
 ```
 {   
-    count : 1,
+    count : 2,
     questions : [
         {
-            id: 1
+            id: 1,
+            category : 1,
             question : 'Do you want to take the food with you?',
             options : [
                 {
@@ -109,6 +110,22 @@ Return all questions.
                     'id' : 2,
                     'text' : 'No'
                     'tag' : 6   // rastaurant
+                }
+            ]
+            update_date: '2014-03-21'
+        }, {
+            id: 5,
+            category : 1,
+            question : 'Wanna taste some traditional foods?',
+            options : [
+                {
+                    'id' : 4,
+                    'text' : 'Yes'
+                    'tag' : 4
+                }, {
+                    'id' : 5,
+                    'text' : 'No'
+                    'tag' : -1 //no tag
                 }
             ]
             update_date: '2014-03-21'
@@ -140,7 +157,7 @@ Return all categories.
     count : 1,
     category : [
         {
-            id: 1
+            id: 1,
             name : 'Eating & Drinking',
             tags : [ 4, 6, 7 ],
             update_date: '2014-03-21'

@@ -20,11 +20,12 @@ class Question
                   $options[] = array(
                       'id' => intval($option['ID']),
                       'text' => $option['Name'],
-                      'tag' => intval($option['TagID'])
+                      'tag' => (isset($option['TagID']) ? intval($option['TagID']) : -1)
                   );
             }
             $questions[] = array(
                  'id' => intval($question['ID']),
+                 'category' => intval($question['CategoryID']),
                  'question' => $question['Question'],
                  'options' => $options,
                  'update_date' => $question['LastUpdateDate']
