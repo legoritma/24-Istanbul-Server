@@ -13,7 +13,10 @@ class PlacesOfInterest
         if (is_null($since)) {
             $poiResults = getDatabase()->all('SELECT * FROM venues');
         } else {
-            $poiResults = getDatabase()->all('SELECT * FROM venues WHERE LastUpdateDate > :since', array(':since' => $since));
+            $poiResults = getDatabase()->all(
+                'SELECT * FROM venues WHERE LastUpdateDate > :since',
+                array(':since' => date('Y-m-d', $since))
+            );
         }
 
         $pois = array();
@@ -32,11 +35,13 @@ class PlacesOfInterest
                 'address'=> $poi['Address'],
                 'update_date'=> $poi['LastUpdateDate']
             );
-            $all = array(
-                'count' => count($pois),
-                'pois' => $pois
-            );
         }
+
+        $all = array(
+            'count' => count($pois),
+            'pois' => $pois
+        );
+
         return $all;
     }
 }
