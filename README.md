@@ -104,14 +104,14 @@ Return all questions.
             options : [
                 {
                     'id' : 1,
-                    'text' : 'Yes'
+                    'text' : 'Yes',
                     'tag' : 7   // takeaway
                 }, {
                     'id' : 2,
-                    'text' : 'No'
+                    'text' : 'No',
                     'tag' : 6   // rastaurant
                 }
-            ]
+            ],
             update_date: '2014-03-21'
         }, {
             id: 5,
@@ -120,14 +120,14 @@ Return all questions.
             options : [
                 {
                     'id' : 4,
-                    'text' : 'Yes'
+                    'text' : 'Yes',
                     'tag' : 4
                 }, {
                     'id' : 5,
-                    'text' : 'No'
+                    'text' : 'No',
                     'tag' : -1 //no tag
                 }
-            ]
+            ],
             update_date: '2014-03-21'
         }
     ]
@@ -190,3 +190,11 @@ Return Istanbul map file
 ### Future Work
 ----------------------------------------
 We should add a token mechanism for security purpose
+
+
+#### Admin Panel
+We can add an admin panel for 24 Istanbul
+
+* People who don't have a programming knowledge can administrate system
+* Questions and tags can be updated without script/sql query
+* Syncing with foursquare can be done automated
