@@ -6,7 +6,8 @@ require_once 'api/Question.php';
 require_once 'api/Category.php';
 
 EPI::setPath('base', 'lib/epiphany');
-EPI::init('api', 'config', 'database', 'route');
+Epi::setPath('view', 'views');
+EPI::init('api', 'config', 'database', 'route', 'template', 'session');
 
 // Configuration
 getConfig()->load('./config/config.ini');

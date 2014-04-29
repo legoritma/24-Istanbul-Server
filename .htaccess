@@ -1,6 +1,7 @@
 RewriteEngine on
 RewriteCond %{REQUEST_URI} !^/(index.php)?$
 RewriteCond %{REQUEST_URI} !^/api/.*$
+RewriteCond %{REQUEST_URI} !^/admin/.*$
 RewriteRule .? - [F,L]
 RewriteRule ^(.*)\?*$ index.php?__route__=/$1 [L,QSA]
 
