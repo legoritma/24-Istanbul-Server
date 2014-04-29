@@ -1,11 +1,11 @@
 <?php
-require_once 'epiphany/Epi.php';
-require_once 'Map.php';
-require_once 'PlacesOfInterest.php';
-require_once 'Question.php';
-require_once 'Category.php';
+require_once 'lib/epiphany/Epi.php';
+require_once 'api/Map.php';
+require_once 'api/PlacesOfInterest.php';
+require_once 'api/Question.php';
+require_once 'api/Category.php';
 
-EPI::setPath('base', 'epiphany');
+EPI::setPath('base', 'lib/epiphany');
 EPI::init('api', 'config', 'database', 'route');
 
 // Configuration
