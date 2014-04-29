@@ -17,8 +17,8 @@
             });
             marker.setMap(map);
             markersArray.push(marker);
-            document.companyForm.elements.lng.value = event.latLng.k;
-            document.companyForm.elements.lat.value = event.latLng.A;
+            document.companyForm.elements.lng.value = event.latLng.A;
+            document.companyForm.elements.lat.value = event.latLng.k;
         });
     }
 
