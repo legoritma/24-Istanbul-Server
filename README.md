@@ -38,8 +38,6 @@ That's why you MUST test your code on your localhost or development server.
 ----------------------------------------
 All external end points start with `/api/`
 
-####Response sections are not final!!!
-
 ### API Lists
 
 * `/api/poi/all.json`
