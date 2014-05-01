@@ -7,6 +7,7 @@ class CompanyController
         $params['title'] = 'Company Subscription';
         $params['body'] = 'admin/add-company.php';
         $params['headerExtra'][] = 'google-map.php';
+        $params['footerExtra'][] = 'tag-filter-script.php';
 
         getTemplate()->display('base.php', $params);
     }

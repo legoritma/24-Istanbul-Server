@@ -39,16 +39,31 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="tagSelect" class="col-sm-2 control-label">Tags</label>
+            <label for="tagSelect" class="col-sm-2 control-label">Category</label>
             <div class="col-sm-10">
-                <select multiple name="tag[]" class="form-control">
+                <select id="inputCategory" class="form-control">
+                    <option value="">Select A Category</option>
                     <?php
-                        $tags = getDatabase()->all('SELECT * FROM tags');
-                        foreach ($tags as $tag) {
-                            echo '<option value="' . $tag['ID'] . '">' . $tag['Name'] . '</option>';
+                        $categories = getDatabase()->all('SELECT * FROM categories');
+                        foreach ($categories as $category) {
+                            echo '<option value="' . $category['ID'] . '">' . $category['Name'] . '</option>';
                         }
                     ?>
                 </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tagSelect" class="col-sm-2 control-label">Tags</label>
+            <div class="col-sm-10">
+                <select multiple name="tag[]" class="form-control" id="inputTag"></select>
+                <div id="availableTags">
+                    <?php
+                        $tags = getDatabase()->all('SELECT * FROM tags');
+                        foreach ($tags as $tag) {
+                            echo '<option value="' . $tag['ID'] . '" data-cat="' . $tag['CategoryID'] . '">' . $tag['Name'] . '</option>';
+                        }
+                    ?>
+                </div>
             </div>
         </div>
         <div class="form-group">
