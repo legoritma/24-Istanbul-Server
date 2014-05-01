@@ -5,7 +5,8 @@ class PaymentController
     {
         $params = array();
         $params['title'] = 'Payment';
-        $params['body'] = 'admin/payment.php';
+        $params['body'][] = 'navbar.php';
+        $params['body'][] = 'admin/payment.php';
 
         getTemplate()->display('base.php', $params);
     }
@@ -21,7 +22,8 @@ class PaymentController
     {
         $params = array();
         $params['title'] = 'Payment Complete';
-        $params['body'] = 'admin/payment-success.php';
+        $params['body'][] = 'navbar.php';
+        $params['body'][] = 'admin/payment-success.php';
 
         getTemplate()->display('base.php', $params);
     }

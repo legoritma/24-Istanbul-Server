@@ -6,6 +6,8 @@ require_once 'api/Question.php';
 require_once 'api/Category.php';
 
 include_once 'controllers/WelcomeController.php';
+include_once 'controllers/AboutController.php';
+include_once 'controllers/ContactController.php';
 include_once 'controllers/CompanyController.php';
 include_once 'controllers/PersonelController.php';
 include_once 'controllers/PaymentController.php';
@@ -21,6 +23,8 @@ EpiDatabase::employ('mysql', $db->name, $db->host, $db->user, $db->pass);
 
 // Routing
 getRoute()->get('/', array('WelcomeController', 'display'));
+getRoute()->get('/about.html', array('AboutController', 'display'));
+getRoute()->get('/contact.html', array('ContactController', 'display'));
 
 getRoute()->get('/api/map', array('Map', 'get'));
 

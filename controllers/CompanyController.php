@@ -5,7 +5,8 @@ class CompanyController
     {
         $params = array();
         $params['title'] = 'Company Subscription';
-        $params['body'] = 'admin/add-company.php';
+        $params['body'][] = 'navbar.php';
+        $params['body'][] = 'admin/add-company.php';
         $params['headerExtra'][] = 'google-map.php';
         $params['footerExtra'][] = 'tag-filter-script.php';
 

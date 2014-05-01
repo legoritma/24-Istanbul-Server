@@ -1,3 +1,10 @@
+<div class="container marketing">
+    <h2 class="featurette-heading">Become part of the 24Istanbul <br><span class="text-muted">Register your restaurant or cafe</span></h2>
+        <p class="lead">Would you like 24Istanbul to find your restaurant or cafe? Then register using the form below. For just 10,- TL a month your restaurant or cafe can take part of 24Istanbul.</p>
+</div>
+
+<hr class="featurette-divider">
+
 <div class="container">
     <form name="companyForm" method="post" role="form" class="form-horizontal" >
         <div class="form-group">
