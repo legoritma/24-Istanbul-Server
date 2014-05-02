@@ -3,13 +3,13 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <span class="glyphicon glyphicon-phon"></span>
+          <span class="glyphicon glyphicon-phone"></span>
           <h2>24Istanbul</h2>
           <p>The Android based APP that helps travelers all around the world to find there way in Istanbul. With over 80 locations, there is always a place to go.
             <p><a class="btn btn-lg btn-primary" href="about.html" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-           <span class="glyphicon glyphicon-envelope"></span>
+           <span class="glyphicon glyphicon-envelop"></span>
           <h2>Contact us</h2>
           <p>24Istanbul is built on user experience. So if you have any questions, suggestions or comments, please contact us by clicking the link below
             <p><a class="btn btn-lg btn-primary" href="contact.html" role="button">View details &raquo;</a></p>
