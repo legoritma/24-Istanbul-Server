@@ -9,7 +9,7 @@
             <p><a class="btn btn-lg btn-primary" href="about.html" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-           <span class="glyphicon glyphicon-envelop"></span>
+           <span class="glyphicon glyphicon-envelope"></span>
           <h2>Contact us</h2>
           <p>24Istanbul is built on user experience. So if you have any questions, suggestions or comments, please contact us by clicking the link below
             <p><a class="btn btn-lg btn-primary" href="contact.html" role="button">View details &raquo;</a></p>
