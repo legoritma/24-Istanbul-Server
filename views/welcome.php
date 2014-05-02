@@ -18,7 +18,7 @@
           <span class="glyphicon glyphicon-cutlery"></span>
           <!--<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">-->
           <h2>Register your POI</h2>
-          <p>24Istanbul makes it possible to add your own Point of Interest, so that yout restaurant or club can be found by the 24Istanbul APP. Click the link to find out how!
+          <p>24Istanbul makes it possible to add your own Point of Interest, so that your restaurant or club can be found by the 24Istanbul APP. Click the link to find out how!
             <p><a class="btn btn-lg btn-primary" href="/admin/add-company.html" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
