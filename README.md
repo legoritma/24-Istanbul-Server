@@ -3,7 +3,7 @@
 
 #Warning
 
-This repo automaticly deployed production server. (http://sw2.obcdn.net/)
+~~This repo automaticly deployed production server.~~
 
 That's why you MUST test your code on your localhost or development server.
 
